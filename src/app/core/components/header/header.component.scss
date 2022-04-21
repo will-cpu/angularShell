@@ -1,0 +1,29 @@
+.header{
+  background-color: whitesmoke;
+display: flex;
+margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  display: flex;
+}
+
+li{
+  margin-left: 10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
