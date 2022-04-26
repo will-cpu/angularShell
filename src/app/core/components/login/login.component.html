@@ -1,4 +1,4 @@
-<mat-card id="loginForm" class="mobile centerW marginTop">
+<mat-card id="loginForm" class="mobile centerW marginTop card">
   <form [formGroup]="form" (submit)="onLogin()" *ngIf="!isLoading" class="stack">
     <mat-form-field appearance="fill">
       <mat-label>Enter your email</mat-label>
@@ -9,10 +9,18 @@
       <mat-label>Enter your password</mat-label>
       <input matInput [type]="isHidden ? 'password' : 'text'" formControlName="password" required>
       <mat-error *ngIf="form.get('password')!.invalid">Please enter your password</mat-error>
-      <button mat-icon-button matSuffix (click)="isHidden = !isHidden" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="isHidden">
+      <button type="button" mat-icon-button matSuffix (click)="isHidden = !isHidden" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="isHidden">
         <mat-icon>{{isHidden ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
     </mat-form-field>
     <button mat-button class="button-main">Login</button>
   </form>
 </mat-card>
+
+<!-- <div class="card">
+  <span class="card-plan">Premium</span>
+  <h3 class="card-title">
+      $20<span>/month</span>
+  </h3>
+  <a href="#" class="card-button">Get started</a>
+</div> -->
