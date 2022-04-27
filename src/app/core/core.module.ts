@@ -4,6 +4,7 @@ import { CoreComponent } from './core.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { CoreRoutingModule } from './core-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -15,7 +16,8 @@ import { CoreRoutingModule } from './core-routing.module';
   ],
   imports: [
     CommonModule,
-    CoreRoutingModule
+    CoreRoutingModule,
+    SharedModule
   ]
 })
 export class CoreModule { }
